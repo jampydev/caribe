@@ -1,0 +1,148 @@
+
+main{
+    font-family:"Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align:center;
+    width: 510px;
+    
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color: var( --dark2-purple);
+    font-size: 26px;
+    font-family: "Parisienne", cursive;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing:5px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: var(--dark-purple);
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+
+label{
+    color: var(--dark-purple);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: var(--light-purple1);
+    border: 2px solid var(--dark-purple);
+    color: var(--dark-purple);
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{ /*ajustar formato del placeholder*/
+    color: var(--light-purple2);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: var(--light-purple2);
+    font-size: 14px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.form-txt a:hover{ /* se coloca la transición y el hover*/
+    color: var(--dark2-purple);
+    padding-left: 6px;
+    font-weight: 500;
+}
+
+.btn{
+    font-size: 16px;
+    color: var(--dark-purple);
+    border: 0;
+    border-radius: 25px;
+    background-color: var();
+    box-shadow: 0 0 20px rgba(51, 5, 51, 0.301);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--dark1-purple);
+    color: white;
+    font-weight: bold;
+}
+
+.form__section{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 70px; 
+    width: 100%; 
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 860px;
+    margin-left: 30px;
+    
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    height: 860px
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus { /*para eliminar un color aguamarina que aparece cuando se autorellena*/
+    -webkit-box-shadow: 0 0 0px 1000px var(--light-purple1) inset;
+}
+
+@media(max-width:991px){ /*ajustar imagen, se oculta, debe aparecer arriba*/
+    main{
+        padding: 30px;
+    }
+
+    .contact__form{
+        width: 100%;
+        margin-bottom: 30px;
+        align-items: center;
+        padding: 50px 50px;
+    }
+
+    input{
+        padding: 15px;
+    }
+}
+    

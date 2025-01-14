@@ -1,0 +1,250 @@
+@import url(style.css);
+
+.container-navbar{
+  background-color:var(--light-purple1);
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+
+.navbar{
+  display: flex ;
+  justify-content: space-between;
+  align-items:center;
+  width:100%;
+  height:100%;
+}
+
+.navbar__logo{
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img{
+  height: 70px;
+  margin-right: 20px;
+}
+
+.navbar__logo span {
+    text-transform:initial;
+    font-size: 1.5rem;
+    color: var(--dark1-purple);
+    font-family: "popins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar__nav{
+  display: flex;
+  align-items:center;
+
+}
+
+.navbar__nav >* {
+  margin-left: 40px;
+}
+
+.nav__list{
+  display:flex;
+  list-style:none;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.nav__link{
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 500px;
+}
+
+.nav__link a {
+  color: var(--dark1-purple);
+  position: relative;
+  font-weight: 400;
+}
+
+.nav__link a::after{
+  content:"";
+  position: absolute;
+  width:100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-purple);
+  opacity: 0;
+  transition:opacity 0.3s ease-in-out;
+}
+
+.nav__link:hover a::after{
+  opacity:1;
+}
+
+.search__icon img {
+  height: 28px;
+}
+
+.navbar__toogler-btn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+
+/*Ajuste de vizualización según tamaño de pantalla*/
+
+/*Visualización 1*/
+
+@media only screen and (min-width:1055px){
+  .navbar__mobile-menu{
+    display: none;
+  }
+}
+
+/*Visualización 2*/
+
+@media only screen and (min-width:500px) and (max-width: 1054px){
+  .nav__list{
+    display: none;
+  }
+  .nav__bar>*{
+    margin-left: 20px;
+  }
+  .navbar__mobile-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:75px;
+    right:0;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index:1;
+  }
+  .nav__link-mobile{
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 100px;
+    margin-top: 2px;
+  }
+
+  .nav__list-mobile{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .nav__link-mobile a{
+    color: var(--dark1-purple);
+    text-decoration: none;
+    position: relative;
+  }
+
+  .nav__link-mobile a::after{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-purple);
+    opacity: 0;
+    transition:opacity 0.3s ease-in-out;
+  }
+
+  .nav__link-mobile:hover a::after{
+    opacity:1;
+  }
+  
+  .navbar__toogler-btn{
+    display: block;
+    margin: 0;
+  }
+
+  .navbar__toogler-btn img{
+    height: 28px;
+    margin: 0 10px;
+  }
+}
+
+/*Visualización 3*/
+
+@media only screen and (min-width:460px) and (max-width: 614px){
+  .nav__list{
+    display: none;
+  }
+  .nav__bar>*{
+    margin-left: 10px;
+  }
+  .navbar__mobile-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:75px;
+    right:0;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index:1;
+  }
+  .nav__link-mobile{
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 100px;
+    margin-top: 2px;
+  }
+
+  .nav__list-mobile{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .nav__link-mobile a{
+    color: var(--dark1-purple);
+    text-decoration: none;
+    position: relative;
+  }
+
+  .nav__link-mobile a::after{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--dark-purple);
+    opacity: 0;
+    transition:opacity 0.3s ease-in-out;
+  }
+
+  .nav__link-mobile:hover a::after{
+    opacity:1;
+  }
+  
+  .navbar__toogler-btn{
+    display: block;
+    margin: 0;
+  }
+
+  .navbar__toogler-btn img{
+    height: 28px;
+    margin: 0 10px;
+  }
+  
+  .button-contacto{
+     display: none;
+  }
+
+  .search__icon{
+    display: none;
+  }
+}
+
+
+
+

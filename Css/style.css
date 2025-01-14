@@ -1,0 +1,234 @@
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --dark-purple: #a75184af;
+    --dark1-purple: hsl(323, 44%, 26%);
+    --dark2-purple: #3f2836;
+    --dark-purpleenf:hsl(322, 59%, 21%);
+    --medium-purple: #d7bde2 ;
+    --light-purple: #b77cdade;
+    --light-purple2:#c39bd3;
+    --yellow: #ffc800;
+    --pink: #fc5185;
+    --light-pink: #f8d3f6;
+    --green: #00b090;
+    --background-grey: #eee;
+    --light-purple1:#ddd0e1 ;
+    --background-purple: #f4ecf7 ;
+    --background-purple2: #ebdef0 ;
+
+  
+
+
+} 
+
+
+*{ /* Quitar efectos por defecto que tiene el navegador*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 270;
+    font-style: normal;
+    background-color: var( --background-purple);
+
+}
+
+a{
+    text-decoration:none;
+}
+
+
+.container{
+    max-width: 1440px;
+    padding: 0px 20px;
+}
+
+
+/* Botón de contacto */
+
+.button{
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.button-primary{
+    color:var(--dark2-purple);
+    background-color: var(--background-grey);
+}
+
+.button-primary:hover {
+    background-color: var(--medium-purple);
+    transition:background-color 0.3s ease-in-out;
+}
+
+
+/* Slider */
+
+.slider{
+    background-color: var(--background-purple2)
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px; /* espacio sobrante fr*/
+    gap: 1em;
+    align-items: center;
+    margin-top: 30px;
+    padding: 40px;
+}
+
+.slider__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.slider__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slider__img{
+    width: 500px;
+    height: 250px;
+    align-items:center;
+}
+
+.slider__title{
+    font-size: 70px;
+    color: var( --dark1-purple);
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-right: 50px;
+    line-height: 105%;
+}
+
+.slider__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+
+/* Botones en el slider */
+
+.botones{
+    margin-top: 30px;
+}
+
+
+.btn-1{
+    display:inline-block;
+    padding: 15px 35px;
+    border: 2px solid var(--dark2-purple);
+    color: var(--dark1-purple);
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-left: 200px;
+     /* ajustar este margen para otras vistas*/
+    
+}
+
+.btn-1:hover{
+    background-color: var(--dark1-purple);
+    color: var(--white);
+}
+
+.footer{
+    text-transform: capitalize; /* colocar en mayúscula cada palabra*/
+    background-color: var(--light-purple1);
+    margin-top: 10%;
+    padding: 40px 0;
+}
+
+.footer__container{ /* configuración génerica para que el contenedor mantenga la info en su lugar y no se desborde*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: var(--dark2-purple);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--dark-purple);
+    padding-top: 10px;
+    display: inline-block; /* para que la línea se mantenga del mismo tamaño que la letra escrita*/
+}
+
+.footer-links ul li a{
+    font-size: 15px;
+    text-decoration: none; /* quitar línea debajo de los enlaces*/
+    color: var(--dark2-purple);
+    display: block;
+    font-weight: 200;
+    margin-bottom: 15px;
+    transition: all.3s ease;
+}
+
+.footer-links ul li a:hover{ /* se coloca la transición y el hover*/
+    color: var(--dark2-purple);
+    padding-left: 6px;
+    font-weight: 500;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height:40px;
+    border-radius: 50%;
+    color: var(--dark2-purple);
+    transition: all .5s ease;
+}
+
+.social-link a:hover{
+    background-color: var(--light-purple2);
+}
+
+/* Responsive footer*/
+
+@media(max-width:991px){/* cuando baje a una resolución de 991px*/
+    .footer-row{
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+

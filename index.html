@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+
+  <!--HEAD-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> CaribeXplorer </title>
+    <link rel="icon" href="Img/CaribeXplorer2_logo.ico"> <!--Colocación de logo en pestaña-->
+    
+    <!--Referenciación de hojas de estilos a usar-->
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!-- Libreria para iconos de redes sociales -->
+    
+    <!-- Referenciación de Google Fonts -->
+     <!-- Fuente Kanit-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Fuente Popins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+ 
+  <!--BODY-->
+
+  <body>
+
+    <!--Inicio Nav Bar -->
+    <header>
+      <section class="container-navbar">
+        <nav class="navbar container">
+            <a href="Inicio.html" class="navbar__logo">
+              <img src="Img/CaribeXplorer2_logo.png" alt="CaribeXplorer">
+              <span>CaribeXplorer</span>
+            </a>
+            <div class="navbar__nav">
+              <ul class="nav__list">
+                <li class="nav__link">
+                  <a href="Inicio.html"> Inicio </a>
+                </li>
+                <li class="nav__link">
+                  <a href="#"> Sobre nosotros </a>
+                </li>
+                <li class="nav__link">
+                  <a href="#"> Servicios </a>
+                </li>
+                <li class="nav__link">
+                  <a href="#"> Saber más </a>
+                </li>
+              </ul>
+              <form action="" class="navbar__search">
+                  <a href="#" class="search__icon">
+                    <img src="Img/Busqueda.png" alt="boton busqueda">
+                  </a>
+              </form>
+              <a href="Contactanos.html" class="button button-primary button-contacto"> Contactanos</a>
+              <button class="navbar__toogler-btn">
+                  <img src="Img/menu-icon.svg" alt="menú logo">
+              </button>
+              <div class="navbar__mobile-menu">
+                <ul class="nav__list-mobile">
+                  <li class="nav__link-mobile">
+                    <a href="Inicio.html"> Inicio </a>
+                  </li>
+                  <li class="nav__link-mobile">
+                    <a href="#"> ¿Quiénes somos? </a>
+                  </li>
+                  <li class="nav__link-mobile">
+                    <a href="#"> Servicios </a>
+                  </li>
+                  <li class="nav__link-mobile">
+                    <a href="#"> Saber más </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Termina nav bar -->
+
+    <!--MAIN-->
+
+    <!-- Inicio Slider principal -->
+    <main>
+
+      <section class = "slider">
+        <div class="slider__container container">
+          <img src="Img/leftarrow.svg" class="slider__arrow" id="before">
+          <img src="Img/rightarrow.svg" class="slider__arrow" id="next">
+
+          <!-- Slider 1 -->
+          <section class="slider__body slider__body--show" data-id="1"> <!-- se quita el slider-body-shows a partir del segundo-->
+            <div class="slider__texts">
+              <h1 class="slider__title"><span> Turismo gastronómico</span></h1>  
+              <div class="botones">
+                <a href="#" class="btn-1"> Conoce más</a>
+              </div>
+            </div>
+            <figure class="slider__picture">
+              <img src="Img/Cartagena.webp" class="slider__img">
+            </figure>
+          </section>
+
+          <!-- Slider 2 -->
+          <section class="slider__body" data-id="2"> <!-- se quita el slider-body-shows a partir del segundo-->
+            <div class="slider__texts">
+              <h2 class="slider__title"><span> Servicios ofrecidos</span></h2>  
+              <div class="botones">
+                <a href="#" class="btn-1"> Conoce más</a>
+              </div>
+            </div>
+            <figure class="slider__picture">
+              <img src="Img/comida costa.jpg" class="slider__img">
+            </figure>
+          </section>
+
+          <!-- Slider 3 -->
+          <section class="slider__body" data-id="3">
+            <div class="slider__texts">
+              <h2 class="slider__title"><span> Tours por ciudades</span></h2>  
+              <div class="botones">
+                <a href="#" class="btn-1"> Conoce más</a>
+              </div>
+            </div>
+            <figure class="slider__picture">
+              <img src="Img/Costa caribe.jfif" class="slider__img">
+            </figure>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer-row">
+          <!-- footer-link 1-->
+          <div class="footer-links">
+            <h4> Compañía</h4>
+            <ul>
+              <li><a href="#"> Nosotros</a></li>
+              <li><a href="#"> Nuestros servicios</a></li>
+              <li><a href="#"> Política de privacidad</a></li>
+              <li><a href="#"> Política de cookies</a></li>
+            </ul>
+          </div>
+          <!-- footer-link 2-->
+          <div class="footer-links">
+            <h4> Ayuda</h4>
+            <ul>
+              <li><a href="#"> Preguntas frecuentes</a></li>
+              <li><a href="#"> Condiciones de uso</a></li>
+              <li><a href="#"> Reservaciones</a></li>
+              <li><a href="#"> Pagos</a></li>
+            </ul>
+          </div>
+          <!-- footer-link 3-->
+          <div class="footer-links">
+            <h4> Empresa</h4>
+            <ul>
+              <li><a href="#"> Servicios</a></li>
+              <li><a href="#"> Reservaciones</a></li>
+              <li><a href="#"> Turismo</a></li>
+              <li><a href="#"> Ciudades</a></li>
+            </ul>
+          </div>
+          <!-- footer-link 4 Icónos redes sociales-->
+          <div class="footer-links">
+            <h4> Siguenos</h4>
+            <div class="social-link">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+   
+    <script src="JavaS/App.js"></script>
+
+  </body>
+ 
+</html>
+
